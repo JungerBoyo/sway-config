@@ -82,8 +82,8 @@ set $menu dmenu_path | wmenu -i -b -f "JetBrains Mono ExtraBold 10" -N "885090" 
     bindsym XF86MonBrightnessDown exec brightnessctl set 1%-
     bindsym XF86MonBrightnessUp+Shift exec brightnessctl set +10%
     bindsym XF86MonBrightnessDown+Shift exec brightnessctl set 10%-
-    bindsym XF86AudioRaiseVolume exec inc_sound 10 $HOME/Sounds/l*.wav
-    bindsym XF86AudioLowerVolume exec dec_sound 10 $HOME/Sounds/l*.wav
+    bindsym XF86AudioRaiseVolume exec . $HOME/.config/sway/inc_sound.sh 10 $HOME/.config/sway/lighter-fx_144bpm_E_minor.wav
+    bindsym XF86AudioLowerVolume exec . $HOME/.config/sway/dec_sound.sh 10 $HOME/.config/sway/lighter-fx_144bpm_E_minor.wav
     bindsym XF86AudioMute exec amixer -q sset Master toggle
     bindsym $mod+Shift+s exec grim -g $(slurp) | wl-copy
 
@@ -262,7 +262,7 @@ include /etc/sway/config.d/*
 
 xwayland enable
 
-output * bg "/home/regu/Pictures/WP-8.png" fill
+output * bg "$HOME/.config/sway/WP-5.png" fill
 
 exec_always --no-startup-id sleep 5 && gammastep -l 53.143291:23.164089 -t 6000:3000
 

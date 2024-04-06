@@ -160,7 +160,7 @@ getFullFmt() {
     update "NET_FMT" "$(getExecute $NET_ENABLE "NET_UPDATE_COUNTER" $NET_UPDATE_PERIOD "getNet")"
     update "SOUND_FMT" "$(getExecute $SOUND_ENABLE "SOUND_UPDATE_COUNTER" $SOUND_UPDATE_PERIOD "getSound")"
     update "MEM_FMT" "$(getExecute $MEM_ENABLE "MEM_UPDATE_COUNTER" $MEM_UPDATE_PERIOD "getMem")"
-#    update "WEATHER_FMT" "$(getExecute $WEATHER_ENABLE "WEATHER_UPDATE_COUNTER" $WEATHER_UPDATE_PERIOD "getWeather")"
+    update "WEATHER_FMT" "$(getExecute $WEATHER_ENABLE "WEATHER_UPDATE_COUNTER" $WEATHER_UPDATE_PERIOD "getWeather")"
 
     echo "[$WEATHER_FMT] [$MEM_FMT] [$SOUND_FMT] [$NET_FMT] [$DATE_FMT] [$TIME_FMT] [$BAT_FMT]"
 }
