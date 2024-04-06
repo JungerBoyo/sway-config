@@ -233,11 +233,8 @@ font pango:JetBrains Mono 12
 
 client.focused #F880B0 #885090 #F8C0D8
 client.unfocused #203060 #203060 #F880B0
-client.focused_inactive #203060 #203060 #F880B0
+client.focused_inactive #F880B0 #203060 #F880B0
 client.urgent #F880B0 #F8C0D8 #885090
-#client.focused.text = #F8C0D8
-#client.focused.border = #F880B0
-#client.focused.background = #885090
 
 input * {
     xkb_layout "pl"
@@ -252,7 +249,7 @@ bar {
         background #203060
         focused_workspace #F880B0 #885090 #F8C0D8
         inactive_workspace #203060 #203060 #F880B0
-        active_workspace #203060 #203060 #F880B0
+        active_workspace #F880B0 #203060 #F880B0
         urgent_workspace #F880B0 #F8C0D8 #885090
     }
     font pango:Noto Color Emoji
