@@ -29,3 +29,6 @@ Status bar implements following info:
   - Weather info (uses Ninja API and requires Api key)
 ```
 It can be configured to some degree thru `status-config.sh`. To add your own info or tweak existing just follow the pattern presented in `status.sh` and `status-config.sh`.
+
+## Showcase
+![](showcase.png)
